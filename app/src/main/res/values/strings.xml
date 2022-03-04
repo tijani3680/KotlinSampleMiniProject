@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RememberKotlinSkills</string>
+
+    <string name="skil1">Get Users</string>
+    <string name="skil2">Data Store preferences</string>
+</resources>
