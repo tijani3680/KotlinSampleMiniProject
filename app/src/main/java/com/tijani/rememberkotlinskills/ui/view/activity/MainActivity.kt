@@ -1,5 +1,7 @@
 package com.tijani.rememberkotlinskills.ui.view.activity
 
+import android.content.Intent
+import android.nfc.Tag
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -18,7 +20,7 @@ import com.tijani.rememberkotlinskills.utils.Status
 import kotlinx.coroutines.*
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main
-import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.*
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -42,13 +44,29 @@ class MainActivity : AppCompatActivity() {
         binding.rclUsers.layoutManager = LinearLayoutManager(this)
         binding.rclUsers.adapter = userAdapter
 
-        binding.txtSaveDataStore.setOnClickListener {
+/*        binding.txtSaveDataStore.setOnClickListener {
             val job = GlobalScope.launch(IO) {
                 counter++
                 dataStoreHelper.saveUserName("Tijani $counter")
             }
 
+        }*/
+
+
+
+
+
+
+        binding.txtSaveDataStore.setOnClickListener {
+
+            startActivity(Intent(this,TestActivity::class.java))
+
+
+
         }
+
+
+
 
         binding.txtReadDataStore.setOnClickListener {
              GlobalScope.launch(IO) {
@@ -102,6 +120,7 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
+
 
 
 }

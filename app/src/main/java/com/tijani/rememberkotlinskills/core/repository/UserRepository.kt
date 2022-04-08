@@ -39,5 +39,9 @@ class UserRepository(private val apiHelper: ApiHelper, private val userDao: User
         }.flowOn(Dispatchers.IO) // Use the IO thread for this Flow
     }
 
+    suspend fun getUserListss():Flow<Response<List<UserM>>>{
+        return apiHelper.getUsers()
+    }
+
 
 }
