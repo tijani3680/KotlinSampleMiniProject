@@ -41,7 +41,10 @@ private fun provideNetworkHelper(context: Context): NetworkHelper {
 }
 
 private fun provideBaseUrl(): String {
-    return "http://192.168.43.35/shirzadProject/"
+//    return "http://192.168.43.35/shirzadProject/"
+    return " https://jsonplaceholder.typicode.com/"
+
+
 }
 
 private fun provideOkHttpClient(): OkHttpClient {

@@ -79,4 +79,27 @@ class UserVM(private val userRepository: UserRepository, private val networkHelp
     }
 
 
+    fun getUsersUsingFlow2(): LiveData<Resource<List<UserM>>>? {
+        userListLiveData = liveData(Dispatchers.IO) {
+            if (networkHelper.isNetworkConnected()) {
+                userRepository.getUserListss()
+                    .onStart { emit(Resource.loading(null)) }
+                    .catch { exception -> emit(Resource.error(exception.cause.toString(), null)) }
+                    .collect {
+                        if (it.isSuccessful) {
+                            emit(Resource.success(it.body()))
+                            it.body()?.let { it1 -> userRepository.addUsersIntoLocalDb(it1) }
+                        }
+                    }
+            } else {
+                userRepository.getUserListFromLocalDbFlow()
+                    .onStart { emit(Resource.loading(null)) }
+                    .catch { exeption -> emit(Resource.error(exeption.message.toString(), null)) }
+                    .collect { emit(Resource.success(it)) }
+            }
+        }
+        return userListLiveData
+    }
+
+
 }

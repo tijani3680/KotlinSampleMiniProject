@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.tijani.rememberkotlinskills.R
-import com.tijani.rememberkotlinskills.core.model.UserM
+import com.tijani.rememberkotlinskills.core.model.FakeUsersItem
 import com.tijani.rememberkotlinskills.databinding.ItemRclUsersBinding
 
 class AdapterUsers(private val context: Context) :
     RecyclerView.Adapter<AdapterUsers.UserViewHolder>() {
-    private var usersList = arrayListOf<UserM>()
+    private var usersList = arrayListOf<FakeUsersItem>()
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
@@ -38,18 +38,16 @@ class AdapterUsers(private val context: Context) :
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun initList(users: List<UserM>) {
+    fun initList(users: List<FakeUsersItem>) {
         usersList.clear()
         usersList.addAll(users)
         notifyDataSetChanged()
     }
 
-
     inner class UserViewHolder(val binding: ItemRclUsersBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bindData(user: UserM) {
-            binding.txtName.text = user.name
-            binding.txtFamily.text = user.family
+        fun bindData(user: FakeUsersItem) {
+            binding.fakeUserInformation=user
         }
     }
 

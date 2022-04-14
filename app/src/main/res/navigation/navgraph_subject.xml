@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subjects"
+    app:startDestination="@id/fragmentSubject">
+
+    <fragment
+        android:id="@+id/fragmentSubject"
+        android:name="com.tijani.rememberkotlinskills.ui.view.fragment.FragmentSubject"
+        android:label="fragment_subject"
+        tools:layout="@layout/fragment_subject" />
+</navigation>

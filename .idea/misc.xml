@@ -3,7 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyProjectSorce/FullScreenNotification/KotlinSampleMiniProject/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
+        <entry key="..\:/MyProjectSorce/FullScreenNotification/KotlinSampleMiniProject/app/src/main/res/layout/activity_test.xml" value="0.18541666666666667" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/drawable-v24/white_gray_bottomnavigation.xml" value="0.277" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/drawable/ic_home.xml" value="0.277" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/drawable/ic_list.xml" value="0.277" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/drawable/ic_subject.xml" value="0.277" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/layout/activity_main2.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/layout/item_rcl_users.xml" value="0.1" />
+        <entry key="..\:/MyProjectSorce/KotlinSampleMiniProject/app/src/main/res/menu/bottom_tabs_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/NewExersizeAndroid/RememberKotlinSkills/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/drawable-v24/menu_icon_dark.xml" value="0.1" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/drawable-v24/white_gray_bottomnavigation.xml" value="0.1" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/drawable/ic_search.xml" value="0.1" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/drawable/search_layout_bg.xml" value="0.1" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/layout/activity_main2.xml" value="0.22447916666666667" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/layout/activity_test.xml" value="0.25" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/layout/fragment_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/layout/fragment_subject.xml" value="0.22447916666666667" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/layout/item_rcl_subjects.xml" value="0.21481481481481482" />
+        <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/KotlinSampleMiniProject/app/src/main/res/layout/item_rcl_users.xml" value="0.33" />
         <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/RememberKotlinSkills/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/SOURCE_CODE/NewExersizeAndroid/RememberKotlinSkills/app/src/main/res/layout/item_rcl_users.xml" value="0.25572519083969464" />
       </map>

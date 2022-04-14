@@ -1,10 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#980042</color>
+    <color name="purple_500">#980042</color>
+    <color name="purple_700">#DCE6E0</color>
+    <color name="teal_200">#F73C7B</color>
+    <color name="teal_700">#F73C7B</color>
+
+
+
+
+
+        <color name="colorPrimary">#980042</color>
+        <color name="colorPrimaryDark2">#980042</color>
+        <color name="colorPrimaryDark">#37474F</color>
+        <color name="colorAccent">#F73C7B</color>
+
+        <color name="grey">#78909C</color>
+        <color name="white">#fff</color>
+        <color name="black">#000</color>
+        <color name="backGroundGray">#37474F</color>
+        <color name="okGreen">#00695C</color>
+        <color name="LightBlue">#2196F3</color>
+        <color name="DarkBlue">#1565C0</color>
+        <color name="DarkGray">#7a7a7a</color>
+        <color name="purple1">#980042</color>
+        <color name="LightPurple">#AD1457</color>
+        <color name="DarkYellow">#F6BF26</color>
+        <color name="dipRed">#f44336</color>
+        <color name="LighterBlue">#81D4FA</color>
+        <color name="red">#B71C1C</color>
+        <color name="backgroundGray">#EFF0F1</color>
+        <color name="lightGrayTextColor">#616161</color>
+
+
+        <!--<color name="translucent_scrim_top">#26000000</color>
+        <color name="translucent_scrim_top_center">#0C000000</color>
+        <color name="translucent_scrim_bottom">#2A000000</color>
+        <color name="translucent_scrim_bottom_center">#0D000000</color>-->
+
+        <color name="translucent_scrim_top">#26000000</color>
+        <color name="translucent_scrim_top_center">#0C000000</color>
+        <color name="translucent_scrim_bottom">#2A000000</color>
+        <color name="translucent_scrim_bottom_center">#39000000</color>
+
+        <color name="blue_grey">#607d8b</color>
+        <color name="emphasis">#31b6e7</color>
+
+        <color name="gray_light">#F3F1F1</color>
+
+
+
+        //// color suites
+
+        <color name="bgSuite1">#3b1070</color>
+        <color name="bgSuite2">#ff3300</color>
+        <color name="bgSuite3">#164b1a</color>
+        <color name="bgSuite4">#c97000</color>
+        <color name="bgSuite5">#11519a</color>
+        <color name="bgSuite6">#98100e</color>
+        <color name="bgSuite7">#aa00c7</color>
+        <color name="bgSuite8">#D50000</color>
+        <color name="bgSuite9">#0050ef</color>
+        <color name="bgSuite10">#9716AF</color>
+        <color name="bgSuite11">#DD2C00</color>
+        <color name="bgSuite12">#048B3C</color>
+
+
+        <color name="suiteReserv">#FF80AB</color>
+        <color name="suiteNotReserv">#66BB6A</color>
+
+
+        /// My Favorit Color social
+        <color name="massanger">#0084ff</color>
+        <color name="facebock">#3b5999</color>
+        <color name="twitter">#55acee</color>
+        <color name="linkedin">#0077B5</color>
+        <color name="dropbox">#007ee5</color>
+        <color name="skype">#00AFF0</color>
+        <color name="cobalt">#0050ef</color>
+        <color name="soundcloud">#ff3300</color>
+        <color name="reddit">#ff5700</color>
+        <color name="blogger">#f57d00</color>
+        <color name="hacknews">#ff6600</color>
+        <color name="snapchat">#FFFC00</color>
+        <color name="line">#00c300</color>
+        <color name="wechat">#09b83e</color>
+        <color name="flicker">#ff0084</color>
+        <color name="watsup">#25D366</color>
+        <color name="emerald">#008a00</color>
+        <color name="weibo">#df2029</color>
+        <color name="gold">#FFD700</color>
+        <color name="myYellow">#fff59d</color>
+        <color name="silver">#AAA9AD</color>
+        <color name="popaGreenApp">#28d6bf</color>
+        <color name="farvardin">#ffab91</color>
+        <color name="greenme">#CCFF90</color>
+        <color name="banafsh">#3f51b5</color>
+        <color name="sor">#EBF4A0A8</color>
 </resources>
