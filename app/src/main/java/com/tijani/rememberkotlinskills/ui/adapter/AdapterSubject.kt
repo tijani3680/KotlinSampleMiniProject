@@ -12,11 +12,8 @@ import com.tijani.rememberkotlinskills.core.model.SubjectM
 import com.tijani.rememberkotlinskills.databinding.ItemRclSubjectsBinding
 import com.tijani.rememberkotlinskills.databinding.ItemRclUsersBinding
 
-class AdapterSubject(private val context: Context) :
+class AdapterSubject(private val context: Context,var onItemClicked:(SubjectM)->Unit) :
     ListAdapter<SubjectM, AdapterSubject.SubjectViewHolder>(SubjectDiffCallback) {
-
-    private var subjectList = arrayListOf<SubjectM>()
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubjectViewHolder {
         val binding = DataBindingUtil.inflate<ItemRclSubjectsBinding>(
@@ -38,6 +35,9 @@ class AdapterSubject(private val context: Context) :
         RecyclerView.ViewHolder(binding.root) {
         fun bindData(subject: SubjectM) {
             binding.subjectInformation = subject
+            binding.cardRootRclSubject.setOnClickListener{
+                onItemClicked(subject)
+            }
         }
     }
 

@@ -14,7 +14,7 @@
         android:theme="@style/Theme.RememberKotlinSkills"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ui.view.activity.MainActivity2"
+            android:name=".ui.view.activity.MainActivity"
             android:windowSoftInputMode="adjustPan"
             android:exported="true" >
             <intent-filter>
@@ -22,13 +22,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".ui.view.activity.activity.TestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.view.activity.activity.MainActivity"
-            android:exported="false">
         </activity>
     </application>
 

@@ -17,9 +17,7 @@
 package com.example.android.navigationadvancedsample
 
 import android.content.Intent
-import android.os.Build
 import android.util.SparseArray
-import androidx.annotation.RequiresApi
 import androidx.core.util.forEach
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.LiveData
@@ -195,7 +193,7 @@ private fun BottomNavigationView.setupItemReselected(
         val navController = selectedFragment.navController
         // Pop the back stack to the start destination of the current navController graph
         navController.popBackStack(
-            navController.graph.startDestinationId,false
+            navController.graph.startDestinationId, false
 
         )
     }

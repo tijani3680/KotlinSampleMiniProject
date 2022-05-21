@@ -1,94 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.view.activity.MainActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#E3E0E0">
+        android:layout_height="match_parent">
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/swipRefreshLayout"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relToolbar">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcl_users"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-        <RelativeLayout
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:background="#6527D5"
-            android:id="@+id/relToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp">
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txtSaveDataStore"
-                android:layout_width="wrap_content"
-                android:padding="8dp"
-                android:textSize="16sp"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="10dp"
-                android:layout_centerVertical="true"
-                android:clickable="true"
-                android:text="save"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:focusable="true" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txtReadDataStore"
-                android:layout_width="wrap_content"
-                android:padding="8dp"
-                android:textSize="16sp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="10dp"
-                android:layout_centerVertical="true"
-                android:clickable="true"
-                android:text="read"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:focusable="true" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txtDeleteDataStore"
-                android:layout_width="wrap_content"
-                android:padding="8dp"
-                android:textSize="16sp"
-                android:layout_marginEnd="10dp"
-                android:layout_centerInParent="true"
-                android:clickable="true"
-                android:text="delete"
-                android:textColor="@color/white"
-                android:layout_height="wrap_content"
-                android:focusable="true" />
-
-        </RelativeLayout>
-
-
-        <ProgressBar
-            android:id="@+id/prg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="6dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/white_gray_bottomnavigation"
+            android:layoutDirection="rtl"
+            android:theme="@style/Widget.BottomNavigationView"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_tabs_menu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
+
 

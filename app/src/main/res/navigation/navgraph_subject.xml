@@ -9,5 +9,22 @@
         android:id="@+id/fragmentSubject"
         android:name="com.tijani.rememberkotlinskills.ui.view.fragment.FragmentSubject"
         android:label="fragment_subject"
-        tools:layout="@layout/fragment_subject" />
+        tools:layout="@layout/fragment_subject" >
+        <action
+            android:id="@+id/action_fragmentSubject_to_fragmentDataStore"
+            app:destination="@id/fragmentDataStore" />
+        <action
+            android:id="@+id/action_fragmentSubject_to_fragmentKotlinFlow"
+            app:destination="@id/fragmentKotlinFlow" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDataStore"
+        android:name="com.tijani.rememberkotlinskills.ui.view.fragment.FragmentDataStore"
+        android:label="fragment_data_store"
+        tools:layout="@layout/fragment_data_store" />
+    <fragment
+        android:id="@+id/fragmentKotlinFlow"
+        android:name="com.tijani.rememberkotlinskills.ui.view.fragment.FragmentKotlinFlow"
+        android:label="fragment_kotlin_flow"
+        tools:layout="@layout/fragment_kotlin_flow" />
 </navigation>

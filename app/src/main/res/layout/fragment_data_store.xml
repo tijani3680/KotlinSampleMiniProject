@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.fragment.FragmentDataStore">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edt_datastore_value"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:hint="type someting..."
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_saveDataStore"
+            android:layout_margin="30dp"
+            android:background="@color/cobalt"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_datastore_value"
+            android:layout_width="match_parent"
+            android:text="Save in Data Store"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ReadeDataStore"
+            android:layout_margin="30dp"
+            android:background="@color/cobalt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_saveDataStore"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:text="Reade from Data Store"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="8dp"
+            android:layout_margin="20dp"
+            android:id="@+id/txtShowDataStore"
+            android:background="@color/farvardin"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_ReadeDataStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_DeleteDataStore"
+            android:layout_margin="30dp"
+            android:background="@color/cobalt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtShowDataStore"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:text="Delete  Data Store"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

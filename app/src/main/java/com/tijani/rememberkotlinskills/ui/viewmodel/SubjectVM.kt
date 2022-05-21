@@ -31,7 +31,9 @@ class SubjectVM : ViewModel() {
             var subjects = arrayListOf<SubjectM>()
             subjects.add(SubjectM(1, "Data Store"))
             subjects.add(SubjectM(2, "Kotlin Flow"))
-            subjects.add(SubjectM(3, "Kotlin Delegation"))
+            subjects.add(SubjectM(3, "Kotlin Class Delegation"))
+            subjects.add(SubjectM(4, "Kotlin Properties Delegation"))
+            subjects.add(SubjectM(5, "Kotlin Observable Delegation"))
             emit(subjects)
         }.flowOn(Dispatchers.IO)
     }

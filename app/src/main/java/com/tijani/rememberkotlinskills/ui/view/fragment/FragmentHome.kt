@@ -11,10 +11,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tijani.rememberkotlinskills.R
+import com.tijani.rememberkotlinskills.core.repository.FakeUserRepository
 import com.tijani.rememberkotlinskills.databinding.FragmentHomeBinding
 import com.tijani.rememberkotlinskills.ui.adapter.AdapterUsers
 import com.tijani.rememberkotlinskills.ui.viewmodel.FakeUserVM
 import com.tijani.rememberkotlinskills.utils.Status
+import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FragmentHome : Fragment() {
@@ -42,11 +44,9 @@ class FragmentHome : Fragment() {
         binding.rclUsers.adapter = userAdapter
 
         setupObserver()
-
         binding.swipRefreshLayout.setOnRefreshListener {
             setupObserver()
         }
-
 
         return binding.root
 

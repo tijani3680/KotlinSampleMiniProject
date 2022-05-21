@@ -1,23 +1,26 @@
 package com.tijani.rememberkotlinskills.ui.view.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.lifecycle.LiveData
 import androidx.navigation.NavController
 import com.example.android.navigationadvancedsample.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.tijani.rememberkotlinskills.R
-import com.tijani.rememberkotlinskills.databinding.ActivityMain2Binding
+import com.tijani.rememberkotlinskills.databinding.ActivityMainBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
-class MainActivity2 : AppCompatActivity() {
-    private lateinit var  binding:ActivityMain2Binding
+class MainActivity : AppCompatActivity() {
+    private lateinit var  binding:ActivityMainBinding
     private var currentNavController: LiveData<NavController>? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main2)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
 
         supportActionBar!!.hide()
 
@@ -29,6 +32,8 @@ class MainActivity2 : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         setupBottomNavigationBar()
+
+
     }
 
     /**
