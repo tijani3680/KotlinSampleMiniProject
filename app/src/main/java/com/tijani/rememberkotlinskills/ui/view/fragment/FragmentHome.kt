@@ -24,6 +24,7 @@ class FragmentHome : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private val fakeUserVM: FakeUserVM by viewModel()
     private lateinit var userAdapter: AdapterUsers
+    private var name =""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
