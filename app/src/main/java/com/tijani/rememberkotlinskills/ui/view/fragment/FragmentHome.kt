@@ -20,8 +20,8 @@ import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class FragmentHome : Fragment() {
-    private val TAG = "FRAGMENT_HOME"
-    private lateinit var binding:FragmentHomeBinding
+    private val TAG = javaClass.simpleName
+    private lateinit var binding: FragmentHomeBinding
     private val fakeUserVM: FakeUserVM by viewModel()
     private lateinit var userAdapter: AdapterUsers
 
@@ -29,16 +29,15 @@ class FragmentHome : Fragment() {
         super.onCreate(savedInstanceState)
         userAdapter = context?.let { AdapterUsers(it) }!!
 
+
     }
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
 
-        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_home,container,false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
         binding.rclUsers.layoutManager = LinearLayoutManager(context)
         binding.rclUsers.adapter = userAdapter
@@ -47,6 +46,7 @@ class FragmentHome : Fragment() {
         binding.swipRefreshLayout.setOnRefreshListener {
             setupObserver()
         }
+
 
         return binding.root
 
